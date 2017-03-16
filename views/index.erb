@@ -1,3 +1,14 @@
 <h1>Hello World!</h1>
-<div id="test"></div>
-<img src="images/blue_eyes.jpg">
+<form method="post" action="/" name="encode">
+  <fieldset class="form-group">
+    <legend>Enter a sentence to encode:</legend>
+    <label for="source">Input:</label>
+    <input type="text" class="form-control" name="source" id="source"
+      required>
+    <label for="encode">Cipher Offset:</label>
+    <input type="number" class="form-control" name="encode" id="encode"
+      required>
+    <input id="submit" type="submit" class="btn btn-lg btn-primary">
+  </fieldset>
+  <p><%= @output %></p>
+</form>
