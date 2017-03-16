@@ -6,23 +6,19 @@ class MyApp < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
   end
-  
+
   @@caesar = Caesar.new
-  @@source = "Caesar's Cipher"
-  @@encode = 0
-  
+
   get "/" do
-    
-    @output = @@caesar.cipher(@@source, @@encode)
-    @@caesar = Caesar.new
+    @output = @@caesar.code
     erb :index
   end
-  
+
   post "/" do
-    @@source = params[:source]
-    @@encode = params[:encode].to_i
-    
+    @@caesar.input = params[:source]
+    @@caesar.shift = params[:encode].to_i
+
     redirect "/"
   end
-    
+
 end
