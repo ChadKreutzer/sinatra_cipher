@@ -12,6 +12,8 @@ map '/assets/' do
   environment.css_compressor = :scss
   environment.append_path 'assets/javascripts'
   environment.append_path 'assets/stylesheets'
+  environment.append_path 'assets/fonts'
+  environment.append_path 'public/images'
   run environment
 end
 
