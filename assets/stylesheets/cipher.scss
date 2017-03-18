@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Archeologicaps';
+  src: url('archeologicaps.woff2') format('woff2'),
+       url('archeologicaps.woff') format('woff'),
+       url('archeologicaps.ttf')  format('truetype');
+}
+
+body {
+  background-image: url('marble.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Archeologicaps', serif;
+}
