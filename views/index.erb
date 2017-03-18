@@ -1,14 +1,28 @@
-<h1>Make like a Roman Agent</h1>
-<form method="post" action="/" name="encode">
-  <fieldset class="form-group">
-    <legend><%= @output %></legend>
-    <label for="source">Enter your message to encode</label>
-    <input type="text" class="form-control" name="source" id="source"
-      required>
-    <label for="encode">Choose a number to be your key</label>
-    <input type="number" class="form-control" name="encode" id="encode"
-      required>
-    <input id="submit" type="submit" class="btn btn-lg btn-primary"
-      value="Make it Secret">
-  </fieldset>
-</form>
+<h1 class="text-center">Make like a Roman Agent</h1>
+<div class="container">
+  <form method="post" action="/" name="encode" class="col-sm-8 col-sm-offset-2">
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="text-center"><%= @output %></legend>
+      </div>
+      <div class="form-group">
+        <label for="source">Enter your message to encode</label>
+        <input type="text" class="form-control" name="source" id="source"
+          required>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <label for="encode">Choose a number to be your key</label>
+          <div class="col-xs-3 col-sm-2">
+            <input type="number" class="form-control" name="encode" id="encode"
+              required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <input id="submit" type="submit" class="btn btn-lg col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-8"
+        value="Make it Secret">
+      </div>
+    </fieldset>
+  </form>
+</div>

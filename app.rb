@@ -7,7 +7,7 @@ class MyApp < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  @@caesar = Caesar.new
+  @@caesar = Caesar.new "Your message will appear here!"
 
   get "/" do
     @output = @@caesar.code

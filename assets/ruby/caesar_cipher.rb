@@ -4,8 +4,8 @@
 class Caesar
   attr_reader :code
 
-  def initialize
-    @input = "Caesar's cipher"
+  def initialize( i )
+    @input = i
     @shift = 0
     @code = cipher(@input, @shift)
   end
