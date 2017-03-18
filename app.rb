@@ -20,5 +20,4 @@ class MyApp < Sinatra::Base
 
     redirect "/"
   end
-
 end
