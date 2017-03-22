@@ -1,9 +1,9 @@
 require 'sinatra/base'
-require 'sinatra/reloader'
 require_relative 'assets/ruby/caesar_cipher'
 
 class MyApp < Sinatra::Base
   configure :development do
+    require 'sinatra/reloader'
     register Sinatra::Reloader
   end
 
