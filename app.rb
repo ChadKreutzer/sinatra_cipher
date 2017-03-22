@@ -15,8 +15,14 @@ class MyApp < Sinatra::Base
   end
 
   post "/" do
-    @@caesar.input = params[:source]
-    @@caesar.shift = params[:encode].to_i
+    
+    if params[:commit] == 'MAKE IT SECRET'
+      @@caesar.input = params[:source]
+      @@caesar.shift = params[:encode].to_i
+    elsif params[:commit] == 'REVEAL THE SECRET'
+      @@caesar.input = params[:source]
+      @@caesar.shift = params[:encode].to_i * -1
+    end
 
     redirect "/"
   end

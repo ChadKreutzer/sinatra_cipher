@@ -19,7 +19,7 @@ class Caesar
     @shift = s
     @code =  cipher(@input, s)
   end
-
+  
   private
 
   def cipher(sentence, raw_offset)
