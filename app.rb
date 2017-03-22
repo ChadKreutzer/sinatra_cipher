@@ -15,11 +15,11 @@ class MyApp < Sinatra::Base
   end
 
   post "/" do
-    
-    if params[:commit] == 'MAKE IT SECRET'
+
+    if params[:commit] == 'ENCODE'
       @@caesar.input = params[:source]
       @@caesar.shift = params[:encode].to_i
-    elsif params[:commit] == 'REVEAL THE SECRET'
+    elsif params[:commit] == 'DECODE'
       @@caesar.input = params[:source]
       @@caesar.shift = params[:encode].to_i * -1
     end

@@ -20,12 +20,20 @@
         </div>
       </div>
      <div class="row form-group">
-        <input id="sub-encode" type="submit" name="commit" class="btn btn-lg col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-8"
-        value="MAKE IT SECRET">
+       <div class="col-xs-6 col-sm-8">
+         <p>To encode a message, type it into the first field, then enter your
+           key number into the second field</p>
+       </div>
+        <input id="sub-encode" type="submit" name="commit" class="btn btn-lg
+          col-xs-6 col-sm-4" value="ENCODE">
       </div>
       <div class="row form-group">
-        <input id="sub-decode" type="submit" name="commit" class="btn btn-lg col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-8"
-        value="REVEAL THE SECRET">
+        <div class="col-xs-6 col-sm-8">
+          <p>To decode a message, type the coded message into the first field,
+            then enter the key you used to encode it into the second field</p>
+        </div>
+        <input id="sub-decode" type="submit" name="commit" class="btn btn-lg
+          col-xs-6 col-sm-4" value="DECODE">
       </div>
     </fieldset>
   </form>
