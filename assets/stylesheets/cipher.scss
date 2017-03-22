@@ -15,5 +15,15 @@ body {
 }
 
 h1 {
+  margin-top: 25%;
   font-family: 'Archeologicaps', serif;
+}
+
+label, .btn {
+  font-family: 'Georgia';  
+}
+
+.btn {
+  border: 1px solid rgb(150, 150, 150);
+  box-shadow: 5px 5px 5px rgb(75, 75, 75);
 }
