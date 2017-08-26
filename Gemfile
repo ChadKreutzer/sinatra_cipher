@@ -12,7 +12,8 @@ gem 'bootstrap-sass'
 gem 'puma'
 # gem 'pony'
 
-group :development do
+group :development, :test do
+  gem 'rspec'
   gem 'tux'
   gem 'sqlite3'
   gem 'sinatra-contrib', require: 'sinatra/reloader'
